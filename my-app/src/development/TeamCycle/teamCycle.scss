@@ -1,0 +1,16 @@
+
+.teamCycle-container {
+  text-align: center;
+
+  &-title {
+    padding: 30px 0;
+  }
+
+  &-insta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+
+  }
+}

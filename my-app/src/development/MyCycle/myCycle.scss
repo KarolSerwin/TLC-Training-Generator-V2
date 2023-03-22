@@ -1,0 +1,123 @@
+.trainingGenerator {
+    display: flex;
+    justify-content: space-around;
+
+    border-radius: 20px;
+
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 600px;
+
+        &-param {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 24px;
+
+            select {
+                font-size: 20px;
+                outline: none;
+                border-radius: 10px;
+                padding: 5px 0;
+            }
+
+            a {
+                font-size: 20px;
+                color: white;
+
+                &:visited {
+                    color: white;
+                }
+            }
+        }
+
+        &-btn {
+            cursor: pointer;
+            outline: none;
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+
+    }
+
+    &-show {
+
+        &-body {
+
+            max-width: 700px;
+            padding-bottom: 50px;
+
+            &-params{
+
+                .span {
+                    font-size: 22px;
+                    font-weight: 600;
+
+                    b {
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            &-content {
+                line-height: 1.5;
+            }
+        }
+
+        &-btns {
+
+
+            &-in {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 50px;
+            }
+
+            button {
+                cursor: pointer;
+                outline: none;
+                border: 1px solid black;
+                border-radius: 15px;
+                padding: 10px 20px;
+                font-weight: bold;
+            }
+
+            .save-btn {
+                background: #f3f1f1;
+                font-size: 18px;
+                color: black;
+                border: 1px solid black;
+                border-radius: 15px;
+                padding: 10px 20px;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            .methods-link {
+                color: whitesmoke;
+                font-weight: bold;
+                font-size: 24px;
+                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                margin-left: 70px;
+
+                &:visited {
+                    color: whitesmoke;
+                    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                }
+            }
+
+        }
+    }
+}
+
+.pdf {
+    margin-top: 100px;
+    width: 700px;
+    font-size: 14px;
+}

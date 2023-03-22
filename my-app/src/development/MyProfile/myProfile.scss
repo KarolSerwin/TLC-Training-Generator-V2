@@ -1,0 +1,70 @@
+
+.myProfile-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 50px;
+
+
+  p {
+    font-size: 26px;
+  }
+
+  &-carousel {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-oneTraining {
+      width: 1000px;
+      margin-left: 100px;
+    }
+
+    &-btns {
+
+      button {
+        font-size: 22px;
+        cursor: pointer;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 10px 20px;
+        font-weight: bold;
+        margin: 20px 20px;
+      }
+    }
+  }
+
+  &-logOut-btn {
+    cursor: pointer;
+    align-self: flex-start;
+    margin-left: 180px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
+  }
+
+  .myProfile-training-show {
+
+    width: 1000px;
+    margin-left: 40px;
+    padding-left: 40px;
+    box-shadow: 0 0 10px 5px whitesmoke;
+    border-radius: 10px;
+    line-height: 1.5;
+
+    h2 {
+      padding-top: 20px;
+    }
+  }
+}
+
+.pdf2 {
+  width: 90%;
+  padding: 50px 50px;
+}
