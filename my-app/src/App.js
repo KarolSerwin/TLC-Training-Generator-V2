@@ -45,6 +45,23 @@ function App() {
   }
 
 
+  function handleCallbackResponse(response) {
+
+  }
+  useEffect(() => {
+    /*global google*/
+    google.accounts.id.initialize({
+      client_id: "1040051880507-b5g7lrkg1kn6n6vc1c1i5uoqajvif5rv.apps.googleusercontent.com",
+      callback: handleCallbackResponse
+    })
+
+    google.account.id.renderButton(
+      document.getElementById("signInDiv"),
+      {theme: "outline", size: "large"}
+    );
+
+  },[])
+
   const [theme, setTheme] = useState(
       localStorage.getItem('theme') || 'light'
   );
