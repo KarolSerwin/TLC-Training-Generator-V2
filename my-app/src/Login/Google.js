@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import jwt_decode from "jwt-decode";
+
 
 
 const GoogleAuth = () => {
@@ -11,9 +11,9 @@ const GoogleAuth = () => {
 useEffect(() => { 
     /*global google*/
     
-      window.onload = function () {
+      
         google.accounts.id.initialize({
-          client_id: "YOUR_GOOGLE_CLIENT_ID",
+          client_id: "1040051880507-b5g7lrkg1kn6n6vc1c1i5uoqajvif5rv.apps.googleusercontent.com",
           callback: handleCredentialResponse
         });
         google.accounts.id.renderButton(
@@ -21,7 +21,7 @@ useEffect(() => {
           { theme: "outline", size: "large" }  // customization attributes
         );
         google.accounts.id.prompt(); // also display the One Tap dialog
-      }
+      
 
   },[]); 
 
